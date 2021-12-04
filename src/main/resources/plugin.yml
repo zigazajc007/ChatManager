@@ -1,0 +1,8 @@
+name: ChatManager
+version: '${project.version}'
+main: com.rabbitcompany.chatmanager.ChatManager
+api-version: 1.18
+softdepend: [ PlaceholderAPI, Vault ]
+authors: [ Black1_TV ]
+description: Simple and fast chat manager
+website: rabbit-company.com

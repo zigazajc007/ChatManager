@@ -21,7 +21,7 @@ public class PlayerMessageListener implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerPlaceholderChat(AsyncPlayerChatEvent event){
         String format = Colors.toHex(Colors.color(PlaceholderAPI.setPlaceholders(event.getPlayer(), chatManager.getConf().getString("format", "&7{display_name} &7> {message}").replace("{name}", event.getPlayer().getName()).replace("{display_name}", event.getPlayer().getDisplayName()))));
-        event.setFormat(format.replace("{message}", event.getMessage()));
+        event.setFormat(format.replace("{message}", event.getMessage().replace("%", "‰")));
     }
 
 }
